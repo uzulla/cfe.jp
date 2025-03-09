@@ -1,56 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uzulla aka Junichi Ishida's Profile</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <div class="profile-image">
+          <img src="img/uzulla.png" alt="avatar" />
+        </div>
+        <h1>uzulla / Junichi Ishida</h1>
+        <p class="bio">Software Engineer / PHP lover!</p>
+        
+        <section class="profile-section">
+          <h2>SNS & Links</h2>
+          <div class="links-grid">
+            <a href="https://twitter.com/uzulla" class="social-link twitter" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+              <span>Twitter</span>
+            </a>
+            <a href="https://www.github.com/uzulla" class="social-link github" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://speakerdeck.com/uzulla" class="social-link speakerdeck" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
+                <path d="M11 7h2v7h-2zm0 8h2v2h-2z"/>
+              </svg>
+              <span>SpeakerDeck</span>
+            </a>
+            <a href="https://www.slideshare.net/junichiishida" class="social-link slideshare" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
+                <path d="m8 12 4-4 4 4H8zm8 0-4 4-4-4h8z"/>
+              </svg>
+              <span>SlideShare</span>
+            </a>
+            <a href="https://bsky.app/profile/uzulla.bsky.social" class="social-link bluesky" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3L4 9v6l8 6 8-6V9l-8-6zm0 2.25L17.5 9 12 12.75 6.5 9 12 5.25z"/>
+              </svg>
+              <span>Bluesky</span>
+            </a>
+            <a href="https://mstdn.jp/@uzulla" class="social-link mastodon" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21.327 8.566c0-4.339-2.843-5.61-2.843-5.61-1.433-.658-3.894-.935-6.451-.956h-.063c-2.557.021-5.018.298-6.451.956 0 0-2.843 1.271-2.843 5.61 0 .993-.019 2.181.012 3.441.103 4.243.778 8.425 4.701 9.463 1.809.479 3.362.579 4.612.51 2.268-.126 3.541-.809 3.541-.809l-.075-1.646s-1.621.511-3.441.449c-1.804-.062-3.707-.194-3.999-2.409a4.523 4.523 0 0 1-.04-.621s1.77.433 4.014.536c1.372.063 2.658-.08 3.965-.236 2.506-.299 4.688-1.843 4.962-3.254.434-2.223.398-5.424.398-5.424zm-3.353 5.59h-2.081V9.057c0-1.075-.452-1.62-1.357-1.62-1 0-1.501.647-1.501 1.927v2.791h-2.069V9.364c0-1.28-.501-1.927-1.501-1.927-.905 0-1.357.546-1.357 1.62v5.099H6.027V8.903c0-1.074.273-1.927.823-2.558.566-.631 1.307-.955 2.228-.955 1.065 0 1.872.409 2.405 1.228l.518.869.519-.869c.533-.819 1.34-1.228 2.405-1.228.92 0 1.662.324 2.228.955.549.631.822 1.484.822 2.558v5.253z"/>
+              </svg>
+              <span>Mastodon</span>
+            </a>
+            <a href="https://phpc.social/@uzulla" class="social-link phpc" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              </svg>
+              <span>PHPC.social</span>
+            </a>
+            <a href="https://lapras.com/public/E6E3M7M" class="social-link lapras" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.333L20 8v8l-8 4-8-4V8l8-3.667z"/>
+              </svg>
+              <span>LAPRAS</span>
+            </a>
+            <a href="https://youtrust.jp/users/6b50128156ceeabf3d46e673651250e3" class="social-link youtrust" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+              </svg>
+              <span>YOUTRUST</span>
+            </a>
+            <a href="https://www.facebook.com/junichi.ishida" class="social-link facebook" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+              </svg>
+              <span>Facebook</span>
+            </a>
+            <a href="https://uzulla.hateblo.jp" class="social-link hatena" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
+                <path d="M9 8v8h2v-8H9zm4 0v8h2v-8h-2z"/>
+              </svg>
+              <span>Hatena Blog</span>
+            </a>
+            <a href="https://instagram.com/uzulla/" class="social-link instagram" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.034-2.425.034-1.602 0-1.792-.006-2.424-.034-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z"/>
+              </svg>
+              <span>Instagram</span>
+            </a>
+            <a href="https://packagist.org/users/uzulla/" class="social-link packagist" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.333L20 8v8l-8 4-8-4V8l8-3.667z"/>
+              </svg>
+              <span>Packagist</span>
+            </a>
+          </div>
+        </section>
 
-<head>
-  <meta charset="utf-8">
-  <title>cfe.jp - uzulla</title>
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-19063513-2']);
-    _gaq.push(['_trackPageview']);
-    (function () {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-</head>
+        <section class="profile-section">
+          <h2>所属コミュニティ</h2>
+          <div class="organization">
+            <p><a href="http://hachiojipm.org" target="_blank" rel="noopener noreferrer"><img src="img/hpm.png" alt="Hachioji.pm logo"></a></p>
+            <p><a href="http://hachiojipm.org" target="_blank" rel="noopener noreferrer">Hachioji.pm</a> Perl monger in Hachioji (Tokyo, JPN)</p>
+          </div>
+        </section>
 
-<body>
-
-  <h1>Junichi Ishida a.k.a. uzulla Profile.</h1>
-  <img src="img/uzulla.png" alt="avater" />
-
-  <h2>SNS, Blog and other.</h2>
-  <ul>
-    <li><a href="https://twitter.com/uzulla" target="_blank">twitter</a></li>
-    <li><a href="https://speakerdeck.com/uzulla">speakerdeck / uzulla</a></li>
-    <li><a href="https://www.slideshare.net/junichiishida">slideshare / junichiishida</a></li>
-    <li><a href="https://bsky.app/profile/uzulla.bsky.social" target="_blank">Blue sky</a></li>
-    <li><a href="https://mstdn.jp/@uzulla" target="_blank">mstdn.jp</a></li>
-    <li><a href="https://phpc.social/@uzulla" target="_blank">phpc.social</a></li>
-    <li><a href="https://lapras.com/public/E6E3M7M" target="_blank">lapras</a></li>
-    <li><a href="https://youtrust.jp/users/6b50128156ceeabf3d46e673651250e3" target="_blank">YOUTRUST</a></li>
-    <li><a href="https://www.facebook.com/junichi.ishida" target="_blank">facebook</a></li>
-    <li><a href="https://www.github.com/uzulla" target="_blank">GitHub</a></li>
-    <li><a href="https://uzulla.hateblo.jp" target="_blank">Hatena Blog(main blog)</a></li>
-    <li><a href="https://instagram.com/uzulla/" target="_blank">Instagram</a></li>
-    <li><a href="https://packagist.org/users/uzulla/" target="_blank">Packagist</a></li>
-  </ul>
-
-  <h2>Joined organization.</h2>
-  <ul>
-    <li><a href="http://hachiojipm.org" target="_blank">Hachioji.pm</a> Perl monger in Hachioji(Tokyo,JPN)</li>
-  </ul>
-
-  <h2>Wrote book.</h2>
-  <ul>
-    <li><a href="https://gihyo.jp/book/2014/978-4-7741-6367-3">Webアプリエンジニア養成読本</a>("For web application engineer
-      newbies". I wrote php part.) Gijutsu-Hyohron Co., Ltd.</li>
-    <li><a href="https://gihyo.jp/book/2019/978-4-297-11055-0">みんなのPHP</a>("PHP for everione". I wrote php environment
-      part.) Gijutsu-Hyohron Co., Ltd.</li>
-  </ul>
-
-</body>
-
+        <section class="profile-section">
+          <h2>著書</h2>
+          <div class="books">
+            <div class="book">
+              <h3><a href="https://gihyo.jp/book/2014/978-4-7741-6367-3" target="_blank" rel="noopener noreferrer">Webアプリエンジニア養成読本</a></h3>
+              <p>"For web application engineer newbies"</p>
+              <p>PHP パートを担当</p>
+              <p>出版社: 技術評論社</p>
+            </div>
+            <div class="book">
+              <h3><a href="https://gihyo.jp/book/2019/978-4-297-11055-0" target="_blank" rel="noopener noreferrer">みんなのPHP</a></h3>
+              <p>"PHP for everyone"</p>
+              <p>PHP環境構築パートを担当</p>
+              <p>出版社: 技術評論社</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
